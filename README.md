@@ -17,7 +17,7 @@
   a) Defining the DAG using Context Manager
   b) Define task (e.g t1 = BashOperator)
   c) t1 >> t2. Defining the task dependencies, using a bitshift operator to do that, >>, meaning that t1 runs first and t2 runs second.
-
+5) "Tree View" to view all runs
 
 
 

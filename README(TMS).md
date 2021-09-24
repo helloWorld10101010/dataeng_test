@@ -28,7 +28,7 @@
 <br />i) name -> first_name, last name
 <br />ii) price -> price, above_100
 <br />*truncate the table before loading new datasets to avoid duplicating records when updating tables
-<br />*open the dataset csv file, skip the first row (header), and insert each line as a record into the covid_data table
+<br />*open the dataset csv file, skip the first row (header), and insert each line as a record into the namelist_data table
 
 4. Airflow DAG
 - Note the value of “0 1 * * *” in our schedule_interval argument which is just CRON language for “run daily at 1am”.

@@ -69,3 +69,8 @@
 ---------------System Architecture Diagram ----------------
   <br />Attached: 
   <br />1) Section 3_Solutions.pptx
+  
+# Section 4: Charts and APIs
+---------------System Architecture Diagram ----------------
+  <br />Attached: 
+  <br />1) 

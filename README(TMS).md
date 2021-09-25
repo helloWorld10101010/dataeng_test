@@ -63,4 +63,4 @@
 # Section 2: Databases
 ---------------ER Diagram & SQL Statements----------------
   <br />Attached 
-  <br />1) Section 2_Solutions
+  <br />1) Section 2_Solutions.pptx

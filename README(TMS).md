@@ -54,10 +54,13 @@
   <br />c) t1 >> t2. Defining the task dependencies, using a bitshift operator to do that, >>, meaning that t1 runs first and t2 runs second.
 5) "Tree View" to view all runs
 
+---------------Processed Dataset----------------
+<br />Attached 
+  <br />1) dataset1_processed.csv
+  <br />2) dataset2_processed.csv
 
 
-
-
-
-
-  
+# Section 2: Databases
+---------------ER Diagram & SQL Statements----------------
+  <br />Attached 
+  <br />1) Q2_Solutions

@@ -73,4 +73,5 @@
 # Section 4: Charts and APIs
 ---------------System Architecture Diagram ----------------
   <br />Attached: 
-  <br />1) 
+  <br />1) Section 4_SG COVID19 Cases.html
+  <br />2) Section 4_SG COVID19 Cases.ipynb

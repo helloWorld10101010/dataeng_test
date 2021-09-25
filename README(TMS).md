@@ -55,12 +55,17 @@
 5) "Tree View" to view all runs
 
 ---------------Processed Dataset----------------
-<br />Attached 
+<br />Attached: 
   <br />1) dataset1_processed.csv
   <br />2) dataset2_processed.csv
 
 
 # Section 2: Databases
 ---------------ER Diagram & SQL Statements----------------
-  <br />Attached 
+  <br />Attached: 
   <br />1) Section 2_Solutions.pptx
+  
+# Section 3: System Design
+---------------System Architecture Diagram ----------------
+  <br />Attached: 
+  <br />1) Section 3_Solutions.pptx

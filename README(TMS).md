@@ -1,5 +1,5 @@
 # dataeng_test (Proposed Solutions)
-# Section 1: Data Pipelines
+# Section 1: Data Pipelines ✔
 ---------------Project Structure----------------
 <br />airflow
 <br />|---- dags
@@ -61,25 +61,25 @@
   <br />2) dataset2_processed.csv
 
 
-# Section 2: Databases
+# Section 2: Databases ✔
 ---------------ER Diagram & SQL Statements----------------
   <br />a) Create db connection
   <br />b) Create tables based on ER diragram
   <br />Attached: 
   <br />1) Section 2_Solutions.pptx
   
-# Section 3: System Design
+# Section 3: System Design ✔
 ---------------System Architecture Diagram----------------
   <br />Attached: 
   <br />1) Section 3_Solutions.pptx
   
-# Section 4: Charts and APIs
+# Section 4: Charts and APIs ✔
 ---------------SG COVID19 Cases----------------
   <br />Attached: 
   <br />1) Section 4_SG COVID19 Cases.html
   <br />2) Section 4_SG COVID19 Cases.ipynb
   
-  # Section 5: Machine Learning
+  # Section 5: Machine Learning [Attempted]
 ---------------Car Evaluation----------------
   <br />Attached: 
   <br />1) Section 5_Car Evaluation

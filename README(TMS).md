@@ -69,12 +69,17 @@
   <br />1) Section 2_Solutions.pptx
   
 # Section 3: System Design
----------------System Architecture Diagram ----------------
+---------------System Architecture Diagram----------------
   <br />Attached: 
   <br />1) Section 3_Solutions.pptx
   
 # Section 4: Charts and APIs
----------------System Architecture Diagram ----------------
+---------------SG COVID19 Cases----------------
   <br />Attached: 
   <br />1) Section 4_SG COVID19 Cases.html
   <br />2) Section 4_SG COVID19 Cases.ipynb
+  
+  # Section 5: Machine Learning
+---------------Car Evaluation----------------
+  <br />Attached: 
+  <br />1) Section 5_Car Evaluation-checkpoint.ipynb

@@ -17,10 +17,11 @@
 2. Transform
 - Save the DataFrame as CSV to the airflow/data directory
 - Break up the pipeline into multiple tasks, or even creating your own custom operators and importing them into your main dag file
-<br />i) Split the name field into first_name, and last_name
-<br />ii) Remove any zeros prepended to the price field
-<br />iii) Delete any rows which do not have a name
-<br />iv) Create a new field named above_100, which is true if the price is strictly greater than 100
+<br />i) Split the name field into first_name, and last_name (split function " ")
+<br />ii) Replace titles that are used before surnames or after last name
+<br />iii) Remove any zeros prepended to the price field (Trim,clean)
+<br />iv) Delete any rows which do not have a name (name field != "")
+<br />v) Create a new field named above_100, which is true if the price is strictly greater than 100 (if price > 100, above_100 = 'TRUE', 'FALSE')
 
 3. Load
 - Designing the schema for the airflow database

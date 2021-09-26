@@ -82,4 +82,4 @@
   # Section 5: Machine Learning
 ---------------Car Evaluation----------------
   <br />Attached: 
-  <br />1) Section 5_Car Evaluation-checkpoint.ipynb
+  <br />1) Section 5_Car Evaluation

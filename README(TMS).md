@@ -63,6 +63,8 @@
 
 # Section 2: Databases
 ---------------ER Diagram & SQL Statements----------------
+  <br />a) Create db connection
+  <br />b) Create tables based on ER diragram
   <br />Attached: 
   <br />1) Section 2_Solutions.pptx
   

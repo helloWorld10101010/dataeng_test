@@ -1,0 +1,41 @@
+/*
+ * I want to know the list of our customers and their spending
+ */
+
+SELECT
+	CustomerID,
+	Customer.FirstName,
+	Customer.LastName,
+	Customer_Transaction.TotalSpending
+FROM
+	Customer
+LEFT JOIN
+            (
+	SELECT
+		COUNT(TransactionID) AS NumofTransactions,
+		Transaction.CustomerID ,
+		SUM(Car_TransactionDetails.Units),
+		SUM(Car_TransactionDetails.Price * Car_TransactionDetails.Units) AS TotalSpending
+	FROM
+		TRANSACTION
+	LEFT JOIN
+                (
+		SELECT
+			CarID,
+			Car.Price,
+			TransactionDetails.Units,
+			TransactionDetails.TransactionID
+		FROM
+			Car
+		RIGHT JOIN
+                    TransactionDetails
+                    ON
+			(CarID = TransactionDetails.CarID)
+                ) AS Car_TransactionDetails
+                ON
+		(TransactionID = Car_TransactionDetails.TransactionID)
+	GROUP BY
+		CustomerID
+            ) AS Customer_Transaction 
+ON
+	Customer_Transaction.CustomerID = CustomerID

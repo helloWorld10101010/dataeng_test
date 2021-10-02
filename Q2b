@@ -1,0 +1,59 @@
+/*
+ * I want to find out the top 3 car manufacturers that customers bought by sales (quantity) 
+ * and the sales number for it in the current month
+ */
+
+SELECT
+	ManufacturerID,
+	Manufacturer.FirstName,
+	Manufacturer.LastName,
+	SUM(Transaction_Info.Transaction_Spend) AS TotalSales,
+	COUNT(Transaction_Info.TransactionID) AS Sales
+FROM
+	Manufacture
+RIGHT JOIN
+            (
+	SELECT
+		CarID,
+		Car.ManufacturerID,
+		Car.Price,
+		TransactionDetails_Info.TransactionID,
+		TransactionDetails_Info.Units,
+		TransactionDetails_Info.TransactionSales_Month,
+		Car.Price * TransactionDetails_Info.Units AS Transaction_Spend
+	FROM
+		Car
+	RIGHT JOIN
+                (
+		SELECT
+			TransactionDetails.CarID,
+			TransactionDetails.TransactionID,
+			TransactionDetails.Units,
+			EXTRACT(MONTH
+		FROM
+			Transactions_Info.TransactionDate) AS TransactionSales_Month
+		FROM
+			TransactionDetails
+		LEFT JOIN
+                    (
+			SELECT
+				TransactionDate,
+				TransactionID
+			FROM
+				TRANSACTION
+                    ) AS Transactions_Info
+                    ON
+			(Transactions_Info. TransactionID = TransactionDetails.TransactionID)
+                ) AS TransactionDetails_Info
+                ON
+		(CarID = TransactionDetails_Info.CarID)
+	WHERE
+		TransactionDetails_Info. TransactionSales_Month = {}
+            ) AS Transaction_Info
+            ON
+	(ManufacturerID = Transaction_Info. ManufacturerID)
+GROUP BY
+	ManufacturerID
+ORDER BY
+	Sales DESC
+LIMIT 3 /* RETURN the FIRST 3 ROWS matching the SELECT criteria*/
